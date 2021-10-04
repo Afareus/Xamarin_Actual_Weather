@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "CNgir9Z1yMkuxZtMlZ/cujMlbWFuJBBhE5Ce5hMb3BN/DHRC1z6rL/7q88zdBTED/zjqfBT4JHzrxM0n0arp7g==",
+  "success": true,
+  "projectFilePath": "F:\\Xamarin\\Pocasi\\Shared\\Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gabriel Kovács\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Gabriel Kovács\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
