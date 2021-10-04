@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "m2bNW5q1ahNR0zLtPGE1d+TamxEx3ET6ngWo5PIgenH7bpvZBoU0P277HyD4Kp1zzVfdvNgVjg1NSEMRDAVy5w==",
+  "success": true,
+  "projectFilePath": "F:\\Xamarin\\Pocasi\\WinFormsPocasi\\WinFormsPocasi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gabriel Kovács\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

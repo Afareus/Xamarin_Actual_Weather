@@ -16,7 +16,7 @@ namespace Shared {
             this.weatherView = weatherView;
         }
 
-        public async Task GetWeatherForCityAsync(string city) {        // async - metody u http byvají běžně asynchronní
+        public async void GetWeatherForCityAsync(string city) {        // async - metody u http byvají běžně asynchronní
             var client = new HttpClient();
             var response = await client.GetAsync("http://api.weatherstack.com/current?access_key=" + API_KEY + "&query=" + city); // await - pro asynchronní metody
             if (response.IsSuccessStatusCode) {
