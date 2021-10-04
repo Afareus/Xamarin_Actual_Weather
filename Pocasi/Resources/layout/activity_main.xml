@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-	android:orientation="vertical">
+	android:orientation="vertical"
+	android:background="#009BCD">
 	<ImageView
-		android:layout_marginTop="15dp"
+		android:layout_marginTop="25dp"
 		android:src="@android:drawable/ic_menu_gallery"
 		android:layout_width="60dp"
 		android:layout_height="60dp"		android:layout_gravity="center_horizontal"
 		android:id="@+id/imageViewPicture" />
 	<TextView
+		android:layout_marginTop="10dp"
 		android:text="City"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -21,7 +23,7 @@
 
 
 	<LinearLayout
-		android:layout_marginTop="15dp"
+		android:layout_marginTop="30dp"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:orientation="horizontal">
@@ -65,7 +67,7 @@
 			android:layout_height="match_parent"
 			android:textSize="20sp"
 			android:id="@+id/textViewTemperature"
-			android:layout_marginLeft="84dp" />	
+			android:layout_marginLeft="85dp" />	
 	</LinearLayout>
 
 
@@ -192,6 +194,16 @@
 			android:id="@+id/textViewTemperature"
 			android:layout_marginLeft="139dp" />	
 	</LinearLayout>
+    <Button
+        android:text="Change The City"
+        android:layout_width="250dp"
+		android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonChange"
+		android:layout_marginTop="40dp"
+		android:backgroundTint="#113377"
+		
+		/>
 
 
 </LinearLayout>
