@@ -11,9 +11,11 @@ using Android.Graphics;
 namespace Pocasi
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity, IWeatherView
+    public class MainActivity : AppCompatActivity, IWeatherView, ISunriseSunsetView
     {
         ImageView imageViewPicture;
+        TextView textViewSunrise;
+        TextView textViewSunset;
         TextView textViewCity;
         TextView textViewWeather;
         TextView textViewTemperature;
@@ -22,6 +24,7 @@ namespace Pocasi
         TextView textViewLocalTime;
         Button buttonChange;
         WeatherService weatherService;                                    // třída z backendu (z projektu Shared)
+        SunriseSunsetService sunriseSunsetService;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -37,6 +40,8 @@ namespace Pocasi
 
         }
         private void SetupReferences() {
+            textViewSunrise = FindViewById<TextView>(Resource.Id.textViewSunrise);
+            textViewSunset = FindViewById<TextView>(Resource.Id.textViewSunset);
             imageViewPicture = FindViewById<ImageView>(Resource.Id.imageViewPicture);
             textViewCity = FindViewById<TextView>(Resource.Id.textViewCity);
             textViewWeather = FindViewById<TextView>(Resource.Id.textViewWeather);
@@ -46,6 +51,7 @@ namespace Pocasi
             textViewLocalTime = FindViewById<TextView>(Resource.Id.textViewLocalTime);
             buttonChange = FindViewById<Button>(Resource.Id.buttonChange);
             weatherService = new WeatherService(this);                             // třída z backendu (z projektu Shared)
+            sunriseSunsetService = new SunriseSunsetService(this);
         }
 
         private void SubscriveEventHandlers() {
@@ -85,6 +91,13 @@ namespace Pocasi
             textViewTemperature.Text = weatherModel.current.temperature.ToString();
             imageViewPicture.SetImageBitmap(GetImageBitmapFromUrl(weatherModel.current.weather_icons[0]));
 
+            sunriseSunsetService.GetSunriseSunsetInfoAsync(weatherModel.location.lat, weatherModel.location.lon);
+
+        }
+
+        public void SetSunriseSunsetData(SunriseSunsetModel sunsetModel) {
+            textViewSunrise.Text = sunsetModel.results.sunrise;
+            textViewSunset.Text = sunsetModel.results.sunset;
 
         }
     }
