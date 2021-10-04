@@ -20,3 +20,4 @@ resources;obj\Debug\110\res\values\strings.xml
 resources;obj\Debug\110\res\values\styles.xml
 string;obj\Debug\110\res\values\strings.xml
 style;obj\Debug\110\res\values\styles.xml
+TextView;obj\Debug\110\res\layout\activity_main.xml

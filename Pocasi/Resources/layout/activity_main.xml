@@ -1,17 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:gridSpec="1|8|#0093eeff|K:#ee8700ff:16,l:72,l:16,r|S:#83ee00ff:16,0,l:16,56,l:16,0,r">
-    <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:id="@+id/imageView1" />
+	android:orientation="vertical">
+	<ImageView
+		android:layout_marginTop="15dp"
+		android:src="@android:drawable/ic_menu_gallery"
+		android:layout_width="60dp"
+		android:layout_height="60dp"		android:layout_gravity="center_horizontal"
+		android:id="@+id/imageViewPicture" />
+	<TextView
+		android:text="City"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textSize="30sp"
+		android:gravity="center_horizontal"
+		android:id="@+id/textViewCity" />
+
+
+	<LinearLayout
+		android:layout_marginTop="15dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		<TextView
+			android:text="Weather:"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:textSize="20sp"
+			android:layout_marginLeft="40dp"
+			android:id="@+id/textView1" />
+		<TextView
+			android:text="Text"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textSize="20sp"
+			android:id="@+id/textViewWeather"
+			android:layout_marginLeft="126dp" />	
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+        <TextView
+            android:text="Temperature:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/textView1"
+            android:layout_marginRight="0.0dp" />
+		<TextView
+			android:text="Text"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textSize="20sp"
+			android:id="@+id/textViewTemperature"
+			android:layout_marginLeft="84dp" />	
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+        <TextView
+            android:text="Wind:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/textView1"
+            android:layout_marginRight="0.0dp" />
+		<TextView
+			android:text="Text"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textSize="20sp"
+			android:id="@+id/textViewTemperature"
+			android:layout_marginLeft="154dp" />	
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+        <TextView
+            android:text="Humidity:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/textView1"
+            android:layout_marginRight="0.0dp" />
+		<TextView
+			android:text="Text"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textSize="20sp"
+			android:id="@+id/textViewTemperature"
+			android:layout_marginLeft="120dp" />	
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+        <TextView
+            android:text="Local time:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/textView1"
+            android:layout_marginRight="0.0dp" />
+		<TextView
+			android:text="Text"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textSize="20sp"
+			android:id="@+id/textViewTemperature"
+			android:layout_marginLeft="107dp" />	
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+        <TextView
+            android:text="Sunrise:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/textView1"
+            android:layout_marginRight="0.0dp" />
+		<TextView
+			android:text="Text"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textSize="20sp"
+			android:id="@+id/textViewTemperature"
+			android:layout_marginLeft="133dp" />	
+	</LinearLayout>
+
+
+	<LinearLayout
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+        <TextView
+            android:text="Sunset:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/textView1"
+            android:layout_marginRight="0.0dp" />
+		<TextView
+			android:text="Text"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:textSize="20sp"
+			android:id="@+id/textViewTemperature"
+			android:layout_marginLeft="139dp" />	
+	</LinearLayout>
+
 
 </LinearLayout>
