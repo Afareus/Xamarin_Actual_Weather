@@ -5,11 +5,13 @@ using Android.Runtime;
 using Android.Widget;
 using AndroidX.AppCompat.App;
 using System;
+using Shared;
+using Android.Graphics;
 
 namespace Pocasi
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity
+    public class MainActivity : AppCompatActivity, IWeatherView
     {
         ImageView imageViewPicture;
         TextView textViewCity;
@@ -19,6 +21,7 @@ namespace Pocasi
         TextView textViewHumidity;
         TextView textViewLocalTime;
         Button buttonChange;
+        WeatherService weatherService;                                    // třída z backendu (z projektu Shared)
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -42,6 +45,7 @@ namespace Pocasi
             textViewHumidity = FindViewById<TextView>(Resource.Id.textViewHumidity);
             textViewLocalTime = FindViewById<TextView>(Resource.Id.textViewLocalTime);
             buttonChange = FindViewById<Button>(Resource.Id.buttonChange);
+            weatherService = new WeatherService(this);                             // třída z backendu (z projektu Shared)
         }
 
         private void SubscriveEventHandlers() {
@@ -57,7 +61,31 @@ namespace Pocasi
             if (requestCode == 1 && resultCode == Result.Ok) {
                 string city = data.GetStringExtra("City");
                 textViewCity.Text = city;
+                weatherService.GetWeatherForCityAsync(city);
             }
+        }
+
+        private Bitmap GetImageBitmapFromUrl(string url) {
+            Bitmap imageBitmap = null;
+            using (var webClient = new System.Net.WebClient()) {
+                var imageBytes = webClient.DownloadData(url);
+                if (imageBytes != null && imageBytes.Length > 0) {
+                    imageBitmap = BitmapFactory.DecodeByteArray(imageBytes, 0, imageBytes.Length);
+                }
+            }
+            return imageBitmap;
+        }
+
+        public void SetWeatherData(WeatherModel weatherModel) {
+            textViewCity.Text = weatherModel.location.name;
+            textViewWeather.Text = weatherModel.current.weather_descriptions[0];
+            textViewHumidity.Text = weatherModel.current.humidity.ToString();
+            textViewLocalTime.Text = weatherModel.location.localtime;
+            textViewWind.Text = weatherModel.current.wind_speed.ToString() + " km/h " ;
+            textViewTemperature.Text = weatherModel.current.temperature.ToString();
+            imageViewPicture.SetImageBitmap(GetImageBitmapFromUrl(weatherModel.current.weather_icons[0]));
+
+
         }
     }
 }
