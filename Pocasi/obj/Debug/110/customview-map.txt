@@ -13,6 +13,7 @@ foreground;obj\Debug\110\res\mipmap-anydpi-v26\ic_launcher_round.xml
 ImageView;obj\Debug\110\res\layout\activity_main.xml
 item;obj\Debug\110\res\values\styles.xml
 LinearLayout;obj\Debug\110\res\layout\activity_main.xml
+LinearLayout;obj\Debug\110\res\layout\cities_layout.xml
 paths;F:\Xamarin\Pocasi\Pocasi\obj\Debug\110\lp\38\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 RelativeLayout;obj\Debug\110\res\layout\activity_main.xml
 resources;obj\Debug\110\res\values\colors.xml
@@ -22,3 +23,4 @@ resources;obj\Debug\110\res\values\styles.xml
 string;obj\Debug\110\res\values\strings.xml
 style;obj\Debug\110\res\values\styles.xml
 TextView;obj\Debug\110\res\layout\activity_main.xml
+TextView;obj\Debug\110\res\layout\cities_layout.xml

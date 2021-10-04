@@ -91,7 +91,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="match_parent"
 			android:textSize="20sp"
-			android:id="@+id/textViewTemperature"
+			android:id="@+id/textViewWind"
 			android:layout_marginLeft="154dp" />	
 	</LinearLayout>
 
@@ -116,7 +116,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="match_parent"
 			android:textSize="20sp"
-			android:id="@+id/textViewTemperature"
+			android:id="@+id/textViewHumidity"
 			android:layout_marginLeft="120dp" />	
 	</LinearLayout>
 
@@ -141,7 +141,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="match_parent"
 			android:textSize="20sp"
-			android:id="@+id/textViewTemperature"
+			android:id="@+id/textViewLocalTime"
 			android:layout_marginLeft="107dp" />	
 	</LinearLayout>
 
@@ -166,7 +166,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="match_parent"
 			android:textSize="20sp"
-			android:id="@+id/textViewTemperature"
+			android:id="@+id/textViewSunrise"
 			android:layout_marginLeft="133dp" />	
 	</LinearLayout>
 
@@ -191,7 +191,7 @@
 			android:layout_width="wrap_content"
 			android:layout_height="match_parent"
 			android:textSize="20sp"
-			android:id="@+id/textViewTemperature"
+			android:id="@+id/textViewSunset"
 			android:layout_marginLeft="139dp" />	
 	</LinearLayout>
     <Button
