@@ -45,23 +45,30 @@ namespace Pocasi {
         }
 
         private void TextViewOttawa_Click(object sender, EventArgs e) {
-            throw new NotImplementedException();
+            GoBackWithCity("Ottawa");
         }
 
         private void TextViewRome_Click(object sender, EventArgs e) {
-            throw new NotImplementedException();
+            GoBackWithCity("Rome");
         }
 
         private void TextViewHelsinky_Click(object sender, EventArgs e) {
-            throw new NotImplementedException();
+            GoBackWithCity("Helsinky");
         }
 
         private void TextViewOstrava_Click(object sender, EventArgs e) {
-            throw new NotImplementedException();
+            GoBackWithCity("Ostrava");
         }
 
         private void TextViewBruntal_Click(object sender, EventArgs e) {
-            throw new NotImplementedException();
+            GoBackWithCity("Bruntal");
+        }
+
+        private void GoBackWithCity(string city) {
+            Intent intent = new Intent();
+            intent.PutExtra("City", city);     // do Extra se uloží pod klíčem City Ottawa
+            SetResult(Result.Ok, intent);          // nastaví ok
+            Finish();                              // ukončí aktivitu
         }
     }
 }

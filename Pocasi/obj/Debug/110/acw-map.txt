@@ -1,3 +1,6 @@
+Pocasi.CitiesActivity, Pocasi;crc643ca3f257de64b3b4.CitiesActivity
+Pocasi.CitiesActivity;crc643ca3f257de64b3b4.CitiesActivity
+pocasi.CitiesActivity;crc643ca3f257de64b3b4.CitiesActivity
 Pocasi.MainActivity, Pocasi;crc643ca3f257de64b3b4.MainActivity
 Pocasi.MainActivity;crc643ca3f257de64b3b4.MainActivity
 pocasi.MainActivity;crc643ca3f257de64b3b4.MainActivity

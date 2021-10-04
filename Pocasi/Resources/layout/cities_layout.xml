@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#009BCD">>
     <TextView
         android:text="Ostrava"
         android:layout_width="match_parent"
@@ -12,7 +13,7 @@
         android:textSize="40sp"
         android:gravity="center_horizontal"
         android:padding="5dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="100dp"
         android:id="@+id/textViewOstrava" />
         <TextView
         android:text="Bruntal"

@@ -303,3 +303,5 @@ F:\Xamarin\Pocasi\Pocasi\obj\Debug\110\stamp\_ConvertResourcesCases.stamp
 F:\Xamarin\Pocasi\Pocasi\obj\Debug\110\stamp\_GenerateJavaStubs.stamp
 F:\Xamarin\Pocasi\Pocasi\obj\Debug\110\stamp\_GeneratePackageManagerJava.stamp
 F:\Xamarin\Pocasi\Pocasi\obj\Debug\110\stamp\_ResolveLibraryProjectImports.stamp
+F:\Xamarin\Pocasi\Pocasi\obj\Debug\110\res\layout\cities_layout.xml
+F:\Xamarin\Pocasi\Pocasi\obj\Debug\110\android\src\crc643ca3f257de64b3b4\CitiesActivity.java
